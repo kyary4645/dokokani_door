@@ -39,9 +39,10 @@
     justify-content: space-between;
     align-items: center;
     box-shadow:0px 5px 11px 2px #000;
+    animation: opacity 3s linear infinite;
     &:hover{
+      animation: none;
       opacity: 1;
-      transition: 0.3s;
     }
     &__form{
       padding: 0 20px;
@@ -77,4 +78,13 @@
       }
     }
   }
+}
+
+@keyframes opacity{
+  0%,100%{
+    opacity: .5;
+  };
+  50%{
+    opacity: .2;
+  };
 }
