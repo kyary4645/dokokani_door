@@ -1,0 +1,98 @@
+.result{
+  display: flex;
+  flex-direction: column;
+  &__title{
+    text-align: center;
+    font-size: 4rem;
+  }
+  &__container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 30px;
+    &__map{
+      width: 68%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #000;
+      padding: 20px;
+      box-shadow:0px 5px 10px 1px #2f2f2f;
+      &__title{
+        padding: 10px 0;
+        border-bottom: 1px dashed #000;
+      }
+      &__address{
+        padding: 10px 0;
+        font-size: 1.5rem;
+      }
+      &__img{
+        width: 100%;
+        height: 550px;
+        background-color: #fcc;
+      }
+    }
+    &__points{
+      width: 28%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #000;
+      padding: 20px;
+      box-shadow:0px 5px 10px 1px #2f2f2f;
+      &__title{
+        color: #fff;
+        background-color: #000;
+        padding: 10px 5px;
+      }
+      &__point{
+        padding: 10px 5px;
+        font-size: 2rem;
+      }
+    }
+    &__footer{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      &__title{
+        color: #fff;
+        background-color: #000;
+        padding: 10px 5px;
+      }
+      &__sns{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 5px;
+      }
+      .btn{
+        padding: 20px 20px;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 0px;
+        .fa-twitter{
+          margin-right: 5px;
+          color: #fff;
+        }
+        &-twitter{
+          color: #fff;
+          background-color: rgb(38, 118, 237);
+        }
+        &-rank{
+          color: #fff;
+          background-color: rgb(225, 190, 14);
+        }
+        &-top{
+          margin-left: 20px;
+          color: #fff;
+          background-color: rgb(244, 75, 75);
+        }
+      }
+      &__buttons{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 10px 5px;
+      }
+    }
+  }
+}
