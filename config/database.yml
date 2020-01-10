@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: dokokani_door_production
-  username: dokokani_door
-  password: <%= ENV['DOKOKANI_DOOR_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
